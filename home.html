@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Casablanca Festival</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Montserrat&display=swap"
+        rel="stylesheet">
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo">
+                <a href="home.html">CASABLANCA</a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Meniu</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="#aboutus">DESPRE NOI</a></li>
+                            <li><a href="calendar.html">PROGRAM</a></li>
+                            <li><a href="movie-list.html">LISTĂ DE FILME</a></li>
+                            <li><a href="contact.html">CONTACT ȘI LOCAȚIE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <div class="text-box">
+            <h1>Casablanca - Festival de film</h1>
+            <p> </p>
+            <p> Festivalul nostru este destinat pentru iubitorii de film care își doresc o ieșire în natură alături de
+                cei dragi. <br> Vă așteptăm în număr cât mai mare în parcul Titan în vacanța de primăvară!</p>
+            <p><br>Luni-Vineri: 8PM</br><br>Sâmbătă: 9PM</br></p>
+            <a href="calendar.html" class="hero-btn">PROGRAM</a>
+        </div>
+    </section>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <section class="about-us" id="aboutus">
+        <h1>Despre noi</h1>
+        <p></p>
+        <div class="row">
+            <div class="about-col">
+                <h3>De ce?</h3>
+                <p>Dorim să readucem în rândul generațiilor o diversitate de filme din toate timpurile și genurile.</p>
+
+            </div>
+            <div class="about-col">
+                <h3>Locație</h3>
+                <p>Ne găsiți în parcul IOR, la scena de lângă lac.
+                </p>
+
+            </div>
+            <div class="about-col">
+                <h3>Rezervări</h3>
+                <p>Pentru locuri în față, aproape de ecran (scenă), puteți face rezervări înainte (cost: 5RON).</p>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

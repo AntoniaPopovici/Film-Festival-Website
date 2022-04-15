@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Casablanca Festival</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Montserrat&display=swap"
+        rel="stylesheet">
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="logo">
+                <a href="home.html">CASABLANCA</a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Meniu</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="home.html">ACASĂ</a></li>
+                            <li><a href="calendar.html">PROGRAM</a></li>
+                            <li><a href="movie-list.html">LISTĂ DE FILME</a></li>
+                            <li><a href="contact.html">CONTACT ȘI LOCAȚIE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Program</h1>
+    </section>
+    <section class="schedule">
+        <div class="row">
+            <div class="day-col">
+                <h3>Luni</h3>
+                <p>Grease
+                </p>
+
+            </div>
+            <div class="day-col">
+                <h3>Marți</h3>
+                <p>The Wizard of Oz</p>
+
+            </div>
+            <div class="day-col">
+                <h3>Miercuri</h3>
+                <p>The Lion, the Witch and the Wardrobe</p>
+            </div>
+            <div class="day-col">
+                <h3>Joi</h3>
+                <p>Back to the Future</p>
+            </div>
+            <div class="day-col">
+                <h3>Vineri</h3>
+                <p>Clueless</p>
+            </div>
+            <div class="day-col">
+                <h3>Sâmbătă</h3>
+                <p>The notebook</p>
+                <p>The Addams Family</p>
+            </div>
+            <script>
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                window.onclick = function (event) {
+                    if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+
+            <script>
+                var navLinks = document.getElementById("navLinks");
+                function showMenu() {
+                    navLinks.style.right = "0";
+                }
+                function hideMenu() {
+                    navLinks.style.right = "-200px";
+                }
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Casablanca Festival</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Montserrat&display=swap"
+        rel="stylesheet">
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="logo">
+                <a href="home.html">CASABLANCA</a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Meniu</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="home.html">ACASĂ</a></li>
+                            <li><a href="calendar.html">PROGRAM</a></li>
+                            <li><a href="movie-list.html">LISTĂ DE FILME</a></li>
+                            <li><a href="contact.html">CONTACT ȘI LOCAȚIE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact și locație</h1>
+    </section>
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11398.492608876544!2d26.15419555000001!3d44.4203782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1febed001802b%3A0xe99fb2271594603d!2sTitan%2C%20Bucharest!5e0!3m2!1sen!2sro!4v1649959065877!5m2!1sen!2sro"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <section class="contact-us">
+        <h1>Pentru rezervări și informații în plus: +40 724 406 650<br></h1>
+    </section>
+</body>
+
+</html>
