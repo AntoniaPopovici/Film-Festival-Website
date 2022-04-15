@@ -1,1 +1,1 @@
-# Tehnici-Web_Festival-Casablanca
+Proiect: site despre un festival de film (doar HTML si CSS).
