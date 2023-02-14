@@ -5,8 +5,4 @@
         The website provides information about the festival, including the schedule of films, their description and location details. Visitors can explore the festival's program, make reservations online and get all the information they need to plan their visit to the festival.
 
 <h5>Overall, the Casablanca - Film Festival website is a perfect example of how technology can enhance the festival-going experience, providing film enthusiasts with a way to discover new movies and engage with the festival from the comfort of their own homes.
-<h2>      Tehcnologies used:
-<h5>     - HTML
-<h5>     - CSS
-<h5>     - Javascript
-<h5>     - Node.Js
+<h2>      Tehcnologies used: HTML, CSS, JavaScript, Node.Js
