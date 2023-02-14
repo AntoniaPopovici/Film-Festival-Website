@@ -1,5 +1,5 @@
 <h1>      Casablanca - Film festival
-<h5>     The Website is a fictional festival created as a final project for the course Web Design and Development. Casablanca festival is set to take place during spring break and is aimed at film enthusiasts from around the world.
+<h5>     The Website is a fictional festival created as a final project for the course Web Design. Casablanca festival is set to take place during spring break and is aimed at film enthusiasts from around the world.
 
 <h5>
         The website provides information about the festival, including the schedule of films, their description and location details. Visitors can explore the festival's program, make reservations tickets online, and get all the information they need to plan their visit to the festival.
