@@ -34,38 +34,30 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <h1>Schedule</h1>
+        <h1>Form</h1>
     </section>
-    <section class="schedule">
-        <div class="row">
-            <div class="day-col">
-                <h3>Monday</h3>
-                <p>Grease
-                </p>
+    <section>
 
-            </div>
-            <div class="day-col">
-                <h3>Tuesday</h3>
-                <p>The Wizard of Oz</p>
+    </section>
+    <section class="form">
+        <form action="form.html" method="POST">
+          <p>  <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="message">Mentions:</label>
+            <textarea id="message" name="message"></textarea>
+        </p>
+        <p>
+            <button type="submit" onclick="return confirm('Sent!')">SEND</button>
+        </p>
 
-            </div>
-            <div class="day-col">
-                <h3>Wednesday</h3>
-                <p>The Lion, the Witch and the Wardrobe</p>
-            </div>
-            <div class="day-col">
-                <h3>Thursday</h3>
-                <p>Back to the Future</p>
-            </div>
-            <div class="day-col">
-                <h3>Friday</h3>
-                <p>Clueless</p>
-            </div>
-            <div class="day-col">
-                <h3>Saturday</h3>
-                <p>The notebook</p>
-                <p>The Addams Family</p>
-            </div>
+        </form>
+    </section>            
             <script>
                 function myFunction() {
                     document.getElementById("myDropdown").classList.toggle("show");
@@ -95,5 +87,4 @@
                 }
             </script>
 </body>
-
 </html>
