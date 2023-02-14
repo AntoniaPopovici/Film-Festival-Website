@@ -8,7 +8,7 @@ The website provides information about the festival, including the schedule of f
 <p>
 Overall, the Casablanca - Film Festival website is a perfect example of how technology can enhance the festival-going experience, providing film enthusiasts with a way to discover new movies and engage with the festival from the comfort of their own homes.
 </p>
-<h2>      Tehcnologies used: </h2>
+<h2>      Technologies used: </h2>
  
 
 - HTML
