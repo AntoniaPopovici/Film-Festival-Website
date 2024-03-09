@@ -1,17 +1,18 @@
-<h1>      Casablanca - Film festival </h1>
+# Casablanca - Film Festival Website
 
-<p>The Website is a fictional festival created as a final project for the course Web Design. Casablanca festival is set to take place during spring break and is aimed at film enthusiasts from around the world.
-</p>
-<p>
-The website provides information about the festival, including the schedule of films, their description and location details. Visitors can explore the festival's program, make reservations online and get all the information they need to plan their visit to the festival.
-</p>
-<p>
-Overall, the Casablanca - Film Festival website is a perfect example of how technology can enhance the festival-going experience, providing film enthusiasts with a way to discover new movies and engage with the festival from the comfort of their own homes.
-</p>
-<h2>      Technologies used: </h2>
- 
+The Casablanca - Film Festival Website is a fictional festival created as a final project for the Web Design course. Set to take place during spring break, the festival aims to attract film enthusiasts from around the world.
+
+## Description
+
+The website serves as a central hub for all information related to the festival, offering visitors details about the event schedule, film descriptions, and location specifics. It provides a platform for exploring the festival's program, and obtaining essential information to plan a visit to the festival.
+
+Overall, the Casablanca - Film Festival website exemplifies how technology can elevate the festival-going experience, offering film enthusiasts an opportunity to discover new movies and engage with the festival conveniently from their own homes.
+
+## Technologies Used
 
 - HTML
 - CSS
 - JavaScript
-- Node.Js
+- Node.js
+
+The website leverages a combination of these technologies to deliver an interactive and informative user experience.
